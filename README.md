@@ -1,9 +1,10 @@
-# Papers — Jonathan Palisoc
+# Jonathan Palisoc — CV and Working Papers
 
-Working papers and manuscripts in review by Jonathan Palisoc, Ph.D. Candidate (Health Services Organization & Policy, University of Michigan).
+Ph.D. Candidate, Health Services Organization & Policy, University of Michigan.
 
-These PDFs are linked from [my CV](https://www.jonpalisoc.com) and are kept current — replacing a file here automatically updates the link.
+- **CV:** <https://papers.jonpalisoc.com/cv.pdf>
+- **Working papers:** see [`papers/`](papers/) — each PDF is the latest working draft.
 
-Custom domain: <https://papers.jonpalisoc.com>
+Custom domain: <https://papers.jonpalisoc.com>. The PDFs hosted here are linked from my [CV](https://papers.jonpalisoc.com/cv.pdf) and from <https://www.jonpalisoc.com>; replacing a file here automatically updates the link target.
 
-Each PDF is the latest working draft, not a final published version. For published work see my CV.
+For published work, see my CV.
