@@ -1,0 +1,13 @@
+#!/bin/bash
+# Post-commit hook: auto-sync manuscript PDFs to ~/papers-public when a commit
+# touches manuscript files. Runs in background so it doesn't block the commit.
+
+CHANGED=$(git diff-tree --no-commit-id --name-only -r HEAD 2>/dev/null)
+
+if echo "$CHANGED" | grep -qE '^(papers|future)/[^/]+/manuscript/.*\.(pdf|md)$'; then
+  (
+    sleep 1
+    /usr/bin/env python3 /Users/jonpalisoc/papers-public/sync.py >/tmp/papers-sync.log 2>&1
+  ) &
+  disown 2>/dev/null || true
+fi

@@ -44,7 +44,7 @@ PAPERS = [
     ("ca-medi-cal-2024-expansion",             HEALTH, "future", "ca-medi-cal-26-49-expansion",           None),
     ("doula-coverage",                         HEALTH, "papers", "doula-coverage",                        "health-affairs"),
     ("evv-rollout",                            HEALTH, "papers", "evv-rollout",                           "health-affairs"),
-    ("fertility-option-larc-ipi",              HEALTH, "papers", "fertility-option-larc-ipi",             None),
+    ("postpartum-extension-chronic-care",      HEALTH, "papers", "fertility-option-larc-ipi",             None),
     ("fmap-floor-ltss-rkd",                    HEALTH, "papers", "fmap-floor-ltss-rkd",                   "medical_care"),
     ("fqhc-nap-bartik-iv",                     HEALTH, "papers", "fqhc-nap-bartik-iv",                    None),
     ("medicaid-drug-pools",                    HEALTH, "papers", "medicaid-drug-pools",                   "health-affairs"),
