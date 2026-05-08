@@ -126,7 +126,7 @@ def sha256(path: Path) -> str:
 
 def sync_one(public_slug: str, src: Path, dry_run: bool) -> str:
     """Copy src into papers-public if it differs. Return status: 'updated', 'unchanged', 'new'."""
-    dst = PAPERS_PUBLIC / "papers" / f"{public_slug}.pdf"
+    dst = PAPERS_PUBLIC / f"{public_slug}.pdf"
     if not dst.exists():
         if dry_run:
             return "new (would copy)"
