@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Pooling Is Not Enough &mdash; 1-Pager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="onepager.css">
+</head>
+<body>
+<div class="page" data-screen-label="01 Drug Pools 1-Pager">
+
+  <div class="eyebrow">
+    <div>Policy One-Pager <span class="dot"></span> Medicaid <span class="dot"></span> Drug Rebates</div>
+    <div><span class="badge">Working Paper &middot; 2026</span></div>
+  </div>
+
+  <div class="masthead">
+    <div>
+      <h1>Pooling is not enough: do interstate Medicaid <em>drug-purchasing pools</em> actually move rebates?</h1>
+      <div class="sub">33 states are in a drug-purchasing pool. Once you control for pharmacy-benefit governance &mdash; uniform PDLs, carve-outs &mdash; the standalone pool effect collapses to roughly zero.</div>
+    </div>
+    <div class="author-chip">
+      <b>Jonathan Palisoc</b>
+      Ph.D. Candidate, Health Services Org. &amp; Policy
+      <div class="role">University of Michigan</div>
+    </div>
+  </div>
+
+  <div class="tldr">
+    <div>
+      <div class="label">The bottom line</div>
+      <p>In the lead saturated event study (SSDC), the uncontrolled post-adoption effect on supplemental-rebate share is <b>+3.37&nbsp;pp</b>. After pharmacy-benefit governance controls, it attenuates to <b>+1.28&nbsp;pp</b>. A stable-design benchmark dropping reform-dense windows gives <b>&minus;2.05&nbsp;pp</b>. The standalone any-pool coefficient is <b>0.06&nbsp;pp (p&nbsp;=&nbsp;0.95)</b>. <em>Nominal pool membership is not separable from the governance bundle.</em></p>
+    </div>
+    <div class="stat">
+      <div class="num">+0.06<small>&nbsp;pp</small></div>
+      <div class="cap">Standalone any-pool coefficient on supplemental-rebate share. <em>p&nbsp;=&nbsp;0.951</em></div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="col left">
+
+      <div class="card">
+        <div class="section-head"><span class="num">01</span> <h3>The premise &mdash; and why it&rsquo;s never been clean.</h3></div>
+        <p>Three pool families (NMPI, TOP$, SSDC) emerged in the mid-2000s on a simple intuition: more covered lives &rArr; more bargaining power &rArr; bigger supplemental rebates. By 2024, <strong>33 states</strong> belonged to one.</p>
+        <p style="margin-top:4px;">But pool adoption almost always travels with a <strong>broader pharmacy-benefit overhaul</strong>: uniform PDLs, pharmacy carve-outs, MCO formulary autonomy, vendor restructuring. The pool, the carve-out, and the uniform PDL move together &mdash; and nobody had tried to separate them.</p>
+      </div>
+
+      <div class="card warm">
+        <div class="section-head"><span class="num">02</span> <h3>Three estimands, one story.</h3></div>
+        <table class="t" style="margin-top:4px;">
+          <thead><tr><th style="text-align:left;">Specification</th><th>&Delta; rebate share</th></tr></thead>
+          <tbody>
+            <tr><td>SSDC, uncontrolled saturated event study</td><td><strong>+3.37&nbsp;pp</strong></td></tr>
+            <tr><td>SSDC, + governance controls</td><td>+1.28&nbsp;pp</td></tr>
+            <tr><td>Stable-design benchmark (drop reform-dense)</td><td><strong style="color:var(--brick);">&minus;2.05&nbsp;pp</strong></td></tr>
+            <tr><td>Static bundle: SSDC alone</td><td>+1.27&nbsp;pp <em>(p=0.57)</em></td></tr>
+            <tr><td>Static bundle: any pool</td><td>+0.06&nbsp;pp <em>(p=0.95)</em></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <div class="section-head"><span class="num">03</span> <h3>Where the positive signal lives.</h3></div>
+        <p>The strongest suggestive evidence is for a <strong>specific governance bundle</strong> &mdash; pool + uniform PDL + pharmacy carve-out from MCOs:</p>
+        <div style="background:var(--paper-2);padding:8px 10px;border-left:2px solid var(--teal);margin-top:6px;">
+          <div style="font-family:'Source Serif 4';font-weight:600;font-size:22px;color:var(--teal);line-height:1;">+8.91&nbsp;pp</div>
+          <div style="font-size:8.5px;color:var(--ink-2);margin-top:3px;">Bundled pool + uniform PDL + carve-out vs. all other state-years <em>(p&nbsp;=&nbsp;0.005)</em></div>
+        </div>
+        <p style="margin-top:6px;">Treated as a <strong>support-limited descriptive concentration</strong>, not a causal headline &mdash; the cell sample is small.</p>
+      </div>
+
+    </div>
+
+    <div class="col right">
+
+      <div class="card">
+        <div class="section-head"><span class="num">A</span> <h3>Why it matters.</h3></div>
+        <ul class="tick">
+          <li>Net Medicaid drug spending grew <strong>72% from FY17&ndash;FY23</strong> &mdash; rebate levers are first-order fiscal policy.</li>
+          <li>Supplemental rebates generate <strong>$1.7B+</strong> per year and vary from ~0% to 28%+ of drug spend across states.</li>
+          <li>If pooling is the lever, more states should join. If <em>governance</em> is the lever, joining a pool isn&rsquo;t enough.</li>
+        </ul>
+      </div>
+
+      <div class="card warm">
+        <div class="section-head"><span class="num">B</span> <h3>What we did.</h3></div>
+        <p>Built a new <strong>50-state, 2002&ndash;2024 panel</strong> linking CMS-64 supplemental-rebate data to a hand-coded, spell-level <strong>pharmacy-benefit governance dataset</strong> &mdash; uniform PDL status, carve-out, MCO formulary autonomy, vendor type, negotiation model.</p>
+        <p>Used SSDC&rsquo;s late-adopter set as the lead heterogeneity-robust saturated event study; NMPI and TOP$ as appendix extensions.</p>
+      </div>
+
+      <div class="card">
+        <div class="section-head"><span class="num">C</span> <h3>Robustness.</h3></div>
+        <ul class="tick teal">
+          <li>Switcher analyses, federal-rebate headroom checks, SDUD drug-mix controls.</li>
+          <li><strong>Rambachan&ndash;Roth honest sensitivity</strong> bounds.</li>
+          <li>No specification recovers a meaningful <strong>standalone</strong> pool effect.</li>
+        </ul>
+      </div>
+
+      <div class="card dark">
+        <div class="section-head"><span class="num">&rarr;</span> <h3>So what?</h3></div>
+        <p>Joining a pool is <strong>not, on its own</strong>, a lever for higher rebate capture. The actionable story is the <strong>governance bundle</strong> &mdash; preferred drug lists, carve-out architecture, negotiation model &mdash; that historically traveled with pool adoption. State fiscal staff should price <em>that bundle</em>, not the pool label.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="who">
+      <b>Jonathan Palisoc</b> &middot; Ph.D. Candidate, Health Services Organization &amp; Policy, University of Michigan<br>
+      <span class="ital">Working paper, 2026. Cite as: Palisoc, J. (2026). Pooling Is Not Enough.</span>
+    </div>
+    <div class="qr">
+      <div class="qbox" data-qr="https://papers.jonpalisoc.com/medicaid-drug-pools.pdf"></div>
+      <div class="qlbl">Read the paper<br><b>papers.jonpalisoc.com</b></div>
+    </div>
+  </div>
+
+</div>
+<script src="onepager.js"></script>
+</body>
+</html>

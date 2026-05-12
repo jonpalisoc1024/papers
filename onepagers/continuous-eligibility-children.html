@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Medicaid Lock &mdash; 1-Pager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="onepager.css">
+</head>
+<body>
+<div class="page" data-screen-label="01 Continuous Eligibility 1-Pager">
+
+  <div class="eyebrow">
+    <div>Policy One-Pager <span class="dot"></span> Medicaid <span class="dot"></span> Labor Supply</div>
+    <div><span class="badge">Working Paper &middot; 2026</span></div>
+  </div>
+
+  <div class="masthead">
+    <div>
+      <h1>Medicaid lock: when a child&rsquo;s coverage stops gating a parent&rsquo;s career.</h1>
+      <div class="sub">Three states quietly extended Medicaid for young children to six full years. The biggest measurable effect isn&rsquo;t on the kids&rsquo; coverage &mdash; it&rsquo;s on their parents&rsquo; work.</div>
+    </div>
+    <div class="author-chip">
+      <b>Jonathan Palisoc</b>
+      Ph.D. Candidate, Health Services Org. &amp; Policy
+      <div class="role">University of Michigan</div>
+    </div>
+  </div>
+
+  <div class="tldr">
+    <div>
+      <div class="label">The bottom line</div>
+      <p>When parents in Oregon, Washington, and New Mexico stopped worrying their child would lose Medicaid the moment they earned a raise, they worked <b>+0.71 more hours per week</b> and were <b>+1.66&nbsp;pp more likely to hold a full-time job</b>. Annual wages rose by roughly <b>$4,400</b>. The effect is on the <em>intensive</em> margin &mdash; people already working took on more &mdash; exactly the canonical signature of <em>Medicaid lock</em> being released.</p>
+    </div>
+    <div class="stat">
+      <div class="num">+0.71<small>&nbsp;hrs/wk</small></div>
+      <div class="cap">Parental work hours after multi-year CE waiver enactment. <em>p&nbsp;=&nbsp;0.027 &middot; CPS-ASEC, ages 0&ndash;6</em></div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="col left">
+
+      <!-- The labor effect -->
+      <div class="card">
+        <div class="section-head"><span class="num">01</span> <h3>What loosens when the coverage lock comes off.</h3></div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:5px;text-align:center;">
+          <div style="background:var(--paper);padding:7px 6px;border-left:2px solid var(--teal);">
+            <div style="font-family:'Source Serif 4';font-weight:600;font-size:18px;color:var(--teal);line-height:1;">+0.71<small style="font-size:10px;">&nbsp;hrs</small></div>
+            <div style="font-size:7.5px;color:var(--ink-2);margin-top:3px;line-height:1.3;">weekly work hours<br><em>p=0.027</em></div>
+          </div>
+          <div style="background:var(--paper);padding:7px 6px;border-left:2px solid var(--teal);">
+            <div style="font-family:'Source Serif 4';font-weight:600;font-size:18px;color:var(--teal);line-height:1;">+1.66<small style="font-size:10px;">&nbsp;pp</small></div>
+            <div style="font-size:7.5px;color:var(--ink-2);margin-top:3px;line-height:1.3;">full-time employment<br><em>p=0.013</em></div>
+          </div>
+          <div style="background:var(--paper);padding:7px 6px;border-left:2px solid var(--ochre);">
+            <div style="font-family:'Source Serif 4';font-weight:600;font-size:18px;color:var(--ochre);line-height:1;">+$4,400</div>
+            <div style="font-size:7.5px;color:var(--ink-2);margin-top:3px;line-height:1.3;">annual wage income<br><em>p=0.067</em></div>
+          </div>
+        </div>
+
+        <p style="margin-top:6px;">Labor-force participation and employment <strong>do not move</strong>. This isn&rsquo;t pulling new workers in &mdash; it&rsquo;s letting the parents already working take on more demanding, better-paid jobs.</p>
+      </div>
+
+      <!-- The mechanism -->
+      <div class="card warm">
+        <div class="section-head"><span class="num">02</span> <h3>The mechanism: a hidden marginal tax.</h3></div>
+        <p>A parent considering a wage bump from $20 to $25 an hour doesn&rsquo;t just face income tax &mdash; they risk their toddler losing Medicaid mid-year. That implicit tax holds parents in place.</p>
+        <p style="margin-top:5px;">The waivers sever it. <strong>Oregon</strong> (Jan 2023), <strong>Washington</strong> (Jul 2023), and <strong>New Mexico</strong> (Nov 2023) provide continuous Medicaid/CHIP eligibility from <strong>birth through age 5</strong> &mdash; no income recheck, six full years of locked-in coverage. <strong>Pennsylvania</strong> joined in 2025.</p>
+      </div>
+
+      <!-- Robustness -->
+      <div class="card">
+        <div class="section-head"><span class="num">03</span> <h3>What survives the stress tests.</h3></div>
+        <table class="t" style="margin-top:3px;">
+          <thead><tr><th style="text-align:left;">Specification</th><th>Hours</th><th>FT</th></tr></thead>
+          <tbody>
+            <tr><td>Baseline staggered DiD</td><td>+0.71</td><td>+1.66</td></tr>
+            <tr><td>+ unwinding-intensity controls</td><td>+0.70</td><td>+1.52</td></tr>
+            <tr><td>Sun&ndash;Abraham heterogeneity-robust</td><td>+0.74</td><td>+1.89</td></tr>
+            <tr><td>Drop NM (smallest cohort)</td><td>+0.82</td><td>+1.71</td></tr>
+            <tr><td>Pre-trends (event study)</td><td colspan="2"><em>Indistinguishable from zero</em></td></tr>
+          </tbody>
+        </table>
+        <div style="font-family:'IBM Plex Mono';font-size:7px;letter-spacing:.1em;color:var(--ink-3);text-transform:uppercase;margin-top:5px;">CPS-ASEC 2016&ndash;2025 &middot; parents of children 0&ndash;6 &middot; 337k parent records</div>
+      </div>
+
+    </div>
+
+    <div class="col right">
+
+      <div class="card">
+        <div class="section-head"><span class="num">A</span> <h3>Why this matters.</h3></div>
+        <ul class="tick">
+          <li>The 2023 CAA required <strong>12-month</strong> continuous eligibility nationally as of Jan 2024. The waiver states show what <strong>multi-year</strong> CE buys.</li>
+          <li>Most policy discussion focuses on <em>churn reduction for kids</em>. The labor channel is potentially <strong>larger</strong> and almost entirely under-discussed.</li>
+          <li>Pennsylvania activated in 2025; several states are considering 1115 waivers. The first quasi-experimental evidence base now exists.</li>
+        </ul>
+      </div>
+
+      <div class="card warm">
+        <div class="section-head"><span class="num">B</span> <h3>What we did.</h3></div>
+        <p>Four data sources, four identification layers:</p>
+        <ul class="tick teal" style="margin-top:4px;">
+          <li><strong>NSCH 2016&ndash;2024</strong> &middot; cross-state DiD on child coverage</li>
+          <li><strong>ACS 2016&ndash;2024</strong> &middot; within-state under-6 vs 19&ndash;25 triple-difference</li>
+          <li><strong>CPS-ASEC 2016&ndash;2025</strong> &middot; parent labor outcomes, 99.3% match rate</li>
+          <li><strong>SIPP 2018&ndash;2024</strong> &middot; <em>within-household</em> sibling FE: under-6 vs. 7&ndash;12 in the same family</li>
+        </ul>
+        <p style="margin-top:5px;">State-year <strong>unwinding-intensity controls</strong> handle the confound from the post-FFCRA Medicaid restart.</p>
+      </div>
+
+      <div class="card">
+        <div class="section-head"><span class="num">C</span> <h3>What we didn&rsquo;t find &mdash; and why.</h3></div>
+        <p>Child coverage effects are <strong>smaller and noisier</strong>: a 0.63&nbsp;pp uninsurance drop in ACS that doesn&rsquo;t survive unwinding controls.</p>
+        <p style="margin-top:5px;">The sibling-FE estimate (Medicaid coverage, monthly) is <strong>+3.3&nbsp;pp, p&nbsp;=&nbsp;0.153</strong>. Most families simply <strong>enroll all eligible children together</strong>, leaving little within-family wedge for the policy to act on.</p>
+      </div>
+
+      <div class="card dark">
+        <div class="section-head"><span class="num">&rarr;</span> <h3>So what?</h3></div>
+        <p>The economic value of multi-year continuous eligibility shows up where the policy discussion isn&rsquo;t looking: in the <strong>parental labor market</strong>. Coverage stability for a child is an <strong>employment policy</strong> for the parent.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="who">
+      <b>Jonathan Palisoc</b> &middot; Ph.D. Candidate, Health Services Organization &amp; Policy, University of Michigan<br>
+      <span class="ital">Working paper, 2026. Cite as: Palisoc, J. (2026). Medicaid Lock and Parental Labor Supply.</span>
+    </div>
+    <div class="qr">
+      <div class="qbox" data-qr="https://papers.jonpalisoc.com/continuous-eligibility-children.pdf"></div>
+      <div class="qlbl">Read the paper<br><b>papers.jonpalisoc.com</b></div>
+    </div>
+  </div>
+
+</div>
+<script src="onepager.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Fraud Playbook &mdash; 1-Pager</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="onepager.css">
+</head>
+<body>
+<div class="page" data-screen-label="01 Fraud Playbook 1-Pager">
+  <div class="eyebrow">
+    <div>Methods One-Pager <span class="dot"></span> Medicaid <span class="dot"></span> Program Integrity</div>
+    <div><span class="badge">Working Paper &middot; 2026</span></div>
+  </div>
+  <div class="masthead">
+    <div>
+      <h1>A public-data <em>fraud-detection playbook</em> for Medicaid program integrity.</h1>
+      <div class="sub">Most state Medicaid fraud units sit on rich claims data and thin analytic tooling. A small library of public-data indicators replicates a credible share of the fraud-and-abuse signal.</div>
+    </div>
+    <div class="author-chip"><b>Jonathan Palisoc</b>Ph.D. Candidate, Health Services Org. &amp; Policy<div class="role">University of Michigan</div></div>
+  </div>
+  <div class="tldr">
+    <div>
+      <div class="label">The bottom line</div>
+      <p>Using only public NPPES, OIG LEIE, CMS Open Payments, T-MSIS provider files, and state PDMP summary data, a five-indicator screening playbook flags <b>1.8% of provider-years</b> for review and concentrates <b>54% of subsequent OIG/MFCU enforcement actions</b> in that flagged cell &mdash; a <b>30&times; precision lift</b> over random review.</p>
+    </div>
+    <div class="stat">
+      <div class="num">30&times;</div>
+      <div class="cap">Precision lift of the playbook over random provider audit. <em>1.8% flagged &middot; 54% of actions</em></div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="col left">
+      <div class="card">
+        <div class="section-head"><span class="num">01</span> <h3>Five public-data indicators.</h3></div>
+        <ul class="tick">
+          <li><strong>Outlier billing intensity</strong> &mdash; claims/provider/quarter z-score in specialty.</li>
+          <li><strong>Sanction history</strong> &mdash; OIG LEIE plus state-level exclusion lists.</li>
+          <li><strong>Address density</strong> &mdash; NPI clusters at single physical address.</li>
+          <li><strong>Payment-pattern dependency</strong> &mdash; CMS Open Payments concentration.</li>
+          <li><strong>Schedule-II prescribing</strong> &mdash; PDMP per-prescriber MME outliers.</li>
+        </ul>
+      </div>
+      <div class="card warm">
+        <div class="section-head"><span class="num">02</span> <h3>What the playbook catches.</h3></div>
+        <div class="stat-row">
+          <div class="stat-cell"><div class="v">54%</div><div class="l">Of subsequent OIG/MFCU actions sit inside the 1.8% flagged cell</div><div class="p">primary</div></div>
+          <div class="stat-cell teal"><div class="v">3.1&times;</div><div class="l">Concentration of recovery dollars vs. base rate</div><div class="p">$ lift</div></div>
+          <div class="stat-cell ochre"><div class="v">12&ndash;18&nbsp;mo</div><div class="l">Median lead-time before enforcement</div><div class="p">early signal</div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="section-head"><span class="num">03</span> <h3>What it misses.</h3></div>
+        <p>Recipient-side fraud (eligibility falsification), small-dollar coding fraud, and managed-care vendor abuse don&rsquo;t fall out of this signal. The playbook is a <strong>provider-side outlier screen</strong>, not a complete fraud system.</p>
+      </div>
+    </div>
+    <div class="col right">
+      <div class="card">
+        <div class="section-head"><span class="num">A</span> <h3>Why it matters.</h3></div>
+        <ul class="tick">
+          <li>State Medicaid Fraud Control Units recover <strong>$1B+</strong> per year &mdash; mostly via reactive case files.</li>
+          <li>Reactive enforcement misses the long-tail rural state programs.</li>
+          <li>Public-data tooling levels the playing field across states.</li>
+        </ul>
+      </div>
+      <div class="card warm">
+        <div class="section-head"><span class="num">B</span> <h3>What we did.</h3></div>
+        <p>Built a national provider-year panel from public sources only; back-tested against the published OIG semiannual reports and the MFCU annual statistical reports for 2019&ndash;2024.</p>
+        <p>Replication package and Python notebooks are part of the paper&rsquo;s appendix.</p>
+      </div>
+      <div class="card">
+        <div class="section-head"><span class="num">C</span> <h3>Caveats.</h3></div>
+        <ul class="tick teal">
+          <li>Selection bias: enforcement actions reflect what regulators chose to pursue.</li>
+          <li>Indicator weights vary by specialty; per-state tuning needed.</li>
+          <li>Not a substitute for case-file investigation.</li>
+        </ul>
+      </div>
+      <div class="card dark">
+        <div class="section-head"><span class="num">&rarr;</span> <h3>So what?</h3></div>
+        <p>States don&rsquo;t need a fancy vendor stack to triple their pre-investigation precision. A public-data screen plus a small analyst team beats reactive case intake &mdash; and the playbook is in the appendix.</p>
+      </div>
+    </div>
+  </div>
+  <div class="foot">
+    <div class="who"><b>Jonathan Palisoc</b> &middot; Ph.D. Candidate, Health Services Organization &amp; Policy, University of Michigan<br><span class="ital">Working paper, 2026. Cite as: Palisoc, J. (2026). A Public-Data Fraud Playbook.</span></div>
+    <div class="qr"><div class="qbox" data-qr="https://papers.jonpalisoc.com/public-data-medicaid-fraud-playbook.pdf"></div><div class="qlbl">Read the paper<br><b>papers.jonpalisoc.com</b></div></div>
+  </div>
+</div>
+<script src="onepager.js"></script>
+</body></html>

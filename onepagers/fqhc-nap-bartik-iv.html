@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Health Centers as Enrollment Infrastructure &mdash; 1-Pager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="onepager.css">
+</head>
+<body>
+<div class="page" data-screen-label="01 FQHC NAP 1-Pager">
+
+  <div class="eyebrow">
+    <div>Policy One-Pager <span class="dot"></span> Safety Net <span class="dot"></span> Coverage</div>
+    <div><span class="badge">Working Paper &middot; 2026</span></div>
+  </div>
+
+  <div class="masthead">
+    <div>
+      <h1>Health centers as <em>enrollment infrastructure</em>: FQHC capacity and county uninsurance.</h1>
+      <div class="sub">FQHCs aren&rsquo;t just clinics &mdash; they&rsquo;re where eligible patients get screened, enrolled, and converted to Medicaid. New shift-share evidence puts a number on the coverage spillover.</div>
+    </div>
+    <div class="author-chip">
+      <b>Jonathan Palisoc</b>
+      Ph.D. Candidate, Health Services Org. &amp; Policy
+      <div class="role">University of Michigan</div>
+    </div>
+  </div>
+
+  <div class="tldr">
+    <div>
+      <div class="label">The bottom line</div>
+      <p>An additional grant-driven FQHC site per 10,000 county residents is associated with a <b>3.90-percentage-point</b> reduction in under-65 uninsurance (composite shift-share IV, post-2016). A tighter HPSA/MUA-only specification yields a smaller, borderline <b>1.33&nbsp;pp</b>. Read the result as a <b>bundled-capacity</b> effect &mdash; sites, staff, outreach, eligibility assistance moving together &mdash; not a per-clinic constant.</p>
+    </div>
+    <div class="stat">
+      <div class="num">&minus;3.90<small>&nbsp;pp</small></div>
+      <div class="cap">Under-65 uninsurance, per FQHC site / 10k. <em>Bartik IV &middot; 95% CI &minus;6.80 to &minus;0.99</em></div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="col left">
+
+      <div class="card">
+        <div class="section-head"><span class="num">01</span> <h3>The hidden role of an FQHC.</h3></div>
+        <p>Federally Qualified Health Centers serve <strong>~31 million patients</strong> a year, half of them on Medicaid. Their <strong>Section 330</strong> grants pay for more than exam rooms:</p>
+        <ul class="tick" style="margin-top:5px;">
+          <li><strong>Outreach</strong> staff who find eligible-uninsured residents.</li>
+          <li><strong>Eligibility counselors</strong> and certified application counselors.</li>
+          <li><strong>Case managers</strong> who shepherd patients through paperwork.</li>
+          <li>A revenue model that <em>only</em> works if walk-ins become covered patients ($1,418 Medicaid PPS vs. ~$0 from the uninsured).</li>
+        </ul>
+      </div>
+
+      <div class="card warm">
+        <div class="section-head"><span class="num">02</span> <h3>The Bartik instrument.</h3></div>
+        <p>Identification: interact a county&rsquo;s <strong>baseline exposure</strong> to HRSA allocation criteria (HPSA, MUA, baseline poverty, baseline uninsurance) with the <strong>national time series</strong> of Section 330 grant funding 1999&ndash;2026.</p>
+        <p style="margin-top:5px;">The shifts come from federal appropriations cycles &mdash; Bush HCI, ARRA, the ACA Community Health Center Fund, and the post-2016 plateau &mdash; not from county-level demand.</p>
+        <div style="font-family:'IBM Plex Mono';font-size:7px;letter-spacing:.1em;color:var(--ink-3);text-transform:uppercase;margin-top:6px;">Diagnostics: Borusyak&ndash;Hull&ndash;Jaravel shift-exogeneity &middot; GPSS Rotemberg weights &middot; AKM exposure-robust SEs</div>
+      </div>
+
+      <div class="card">
+        <div class="section-head"><span class="num">03</span> <h3>Two estimates, two stories.</h3></div>
+        <div class="stat-row two">
+          <div class="stat-cell"><div class="v">&minus;3.90<small>&thinsp;pp</small></div><div class="l"><strong>Composite</strong> shift-share &mdash; HPSA + MUA + baseline poverty + uninsurance.</div><div class="p">CI &minus;6.80 to &minus;0.99</div></div>
+          <div class="stat-cell teal"><div class="v">&minus;1.33<small>&thinsp;pp</small></div><div class="l"><strong>HPSA/MUA-only</strong> &mdash; cleaner instrument; smaller, borderline.</div><div class="p">CI &minus;2.70 to +0.04</div></div>
+        </div>
+        <p style="margin-top:6px;">The honest read: a meaningful but <strong>local, design-dependent</strong> association &mdash; not a universal per-clinic effect.</p>
+      </div>
+
+    </div>
+
+    <div class="col right">
+
+      <div class="card">
+        <div class="section-head"><span class="num">A</span> <h3>Why it matters.</h3></div>
+        <ul class="tick">
+          <li>The Community Health Center Fund cycles through <strong>short reauthorizations</strong>; every cliff debate needs causal numbers.</li>
+          <li>FQHCs are the <strong>largest federally-supported primary-care safety net</strong> in the U.S.</li>
+          <li>The coverage channel runs through <strong>enrollment infrastructure</strong>, not provider supply &mdash; a mechanism rarely measured.</li>
+        </ul>
+      </div>
+
+      <div class="card warm">
+        <div class="section-head"><span class="num">B</span> <h3>What we did.</h3></div>
+        <p>Built a county-year panel linking <strong>HRSA UDS/H80 grant</strong> ledgers, FQHC sites, baseline need, and <strong>Census SAHIE</strong> under-65 uninsurance &mdash; bridging the 2013&ndash;15 USAspending &ldquo;cliff&rdquo; that breaks most prior pipelines.</p>
+        <p>Bartik 2SLS with county and fiscal-year fixed effects; exposure-robust inference via Ad&atilde;o&ndash;Koles&aacute;r&ndash;Morales.</p>
+      </div>
+
+      <div class="card">
+        <div class="section-head"><span class="num">C</span> <h3>Scope &amp; caveats.</h3></div>
+        <ul class="tick teal">
+          <li>Effect strongest in the <strong>post-2016 plateau</strong>; pre-2016 weakly identified.</li>
+          <li>A <strong>Ryan White placebo</strong> using shared composite shares is non-null &mdash; outcome choice matters.</li>
+          <li>SAHIE vs. ACS as outcome shifts magnitude; HPSA/MUA-only is the conservative anchor.</li>
+        </ul>
+      </div>
+
+      <div class="card dark">
+        <div class="section-head"><span class="num">&rarr;</span> <h3>So what?</h3></div>
+        <p>Section 330 funding doesn&rsquo;t just buy primary care &mdash; it buys <strong>coverage uptake</strong>. CBO scores of FQHC funding should price in the enrollment-spillover channel, and reauthorization cliffs should be evaluated against the coverage losses they risk.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="who">
+      <b>Jonathan Palisoc</b> &middot; Ph.D. Candidate, Health Services Organization &amp; Policy, University of Michigan<br>
+      <span class="ital">Working paper, 2026. Cite as: Palisoc, J. (2026). Health Centers as Enrollment Infrastructure.</span>
+    </div>
+    <div class="qr">
+      <div class="qbox" data-qr="https://papers.jonpalisoc.com/fqhc-nap-bartik-iv.pdf"></div>
+      <div class="qlbl">Read the paper<br><b>papers.jonpalisoc.com</b></div>
+    </div>
+  </div>
+
+</div>
+<script src="onepager.js"></script>
+</body>
+</html>

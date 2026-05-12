@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Removing the Gate &mdash; 1-Pager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="onepager.css">
+</head>
+<body>
+<div class="page" data-screen-label="01 Buprenorphine PA 1-Pager">
+
+  <div class="eyebrow">
+    <div>Policy One-Pager <span class="dot"></span> Medicaid <span class="dot"></span> OUD</div>
+    <div><span class="badge">Working Paper &middot; 2026</span></div>
+  </div>
+
+  <div class="masthead">
+    <div>
+      <h1>Removing the gate: Medicaid prior authorization, buprenorphine, and overdose mortality.</h1>
+      <div class="sub">Twelve states quietly dropped a paperwork rule on a lifesaving addiction medication. Prescribing jumped by tens of thousands of fills per quarter &mdash; with a plausible downstream signal in overdose deaths.</div>
+    </div>
+    <div class="author-chip">
+      <b>Jonathan Palisoc</b>
+      Ph.D. Candidate, Health Services Org. &amp; Policy
+      <div class="role">University of Michigan</div>
+    </div>
+  </div>
+
+  <div class="tldr">
+    <div>
+      <div class="label">The bottom line</div>
+      <p>Buprenorphine roughly <b>halves all-cause mortality</b> in opioid use disorder &mdash; yet most Medicaid programs still gate it behind <b>prior authorization (PA)</b>. Across the 12 states that dropped PA between 2015 and 2022, prescribing rose by an estimated <b>16,000+ fills per state-quarter</b>. A back-of-the-envelope translation implies roughly <b>480 overdose deaths averted per year</b> across the treated states.</p>
+    </div>
+    <div class="stat">
+      <div class="num">+16,209<small>&nbsp;Rx</small></div>
+      <div class="cap">Additional buprenorphine prescriptions per state-quarter after PA removal. <em>DID2S &middot; 95% CI 2,183&ndash;30,236 &middot; p&nbsp;=&nbsp;0.024</em></div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="col left">
+
+      <!-- The policy context -->
+      <div class="card">
+        <div class="section-head"><span class="num">01</span> <h3>A drug we know works, behind a paperwork gate.</h3></div>
+        <p style="margin-bottom:5px;">Buprenorphine is one of three FDA-approved medications for opioid use disorder &mdash; and the only one a regular office-based clinician can prescribe. The evidence base is unusually strong:</p>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:6px;text-align:center;">
+          <div style="background:var(--paper);padding:7px 6px;border-left:2px solid var(--teal);">
+            <div style="font-family:'Source Serif 4';font-weight:600;font-size:20px;color:var(--teal);line-height:1;">&minus;50<small style="font-size:11px;">%</small></div>
+            <div style="font-size:7.5px;color:var(--ink-2);margin-top:3px;line-height:1.3;">all-cause<br>mortality (NASEM)</div>
+          </div>
+          <div style="background:var(--paper);padding:7px 6px;border-left:2px solid var(--teal);">
+            <div style="font-family:'Source Serif 4';font-weight:600;font-size:20px;color:var(--teal);line-height:1;">&minus;38<small style="font-size:11px;">%</small></div>
+            <div style="font-size:7.5px;color:var(--ink-2);margin-top:3px;line-height:1.3;">mortality 12&nbsp;mo.<br>post-overdose (Larochelle)</div>
+          </div>
+          <div style="background:var(--paper);padding:7px 6px;border-left:2px solid var(--teal);">
+            <div style="font-family:'Source Serif 4';font-weight:600;font-size:20px;color:var(--teal);line-height:1;">&minus;59<small style="font-size:11px;">%</small></div>
+            <div style="font-size:7.5px;color:var(--ink-2);margin-top:3px;line-height:1.3;">overdose-related<br>acute care (Wakeman)</div>
+          </div>
+        </div>
+
+        <p style="margin-top:7px;">But only about <strong>11%</strong> of people with OUD ever receive medication. <strong>53%</strong> of Medicaid enrollees who do face <strong>prior authorization</strong> &mdash; documentation of failed treatments, drug screens, dose caps, counseling contracts &mdash; gating a drug whose entire policy rationale is <em>immediate office-based access</em>.</p>
+      </div>
+
+      <!-- Headline result -->
+      <div class="card warm">
+        <div class="section-head"><span class="num">02</span> <h3>Three estimators, one prescribing answer.</h3></div>
+        <p>Using a 14-year state-quarter panel and staggered PA removal across 12 states, three different DiD estimators converge on the same prescribing answer:</p>
+
+        <table class="t" style="margin-top:5px;">
+          <thead><tr><th style="text-align:left;">Estimator</th><th>&Delta; Rx/quarter</th><th><em>p</em></th></tr></thead>
+          <tbody>
+            <tr><td>Gardner DID2S <em>(preferred)</em></td><td><strong>+16,209</strong></td><td>0.024</td></tr>
+            <tr><td>Two-way fixed effects</td><td>+17,436</td><td>0.019</td></tr>
+            <tr><td>Local-projections DiD</td><td>+12,861</td><td>&lt;0.001</td></tr>
+          </tbody>
+        </table>
+        <div style="font-family:'IBM Plex Mono';font-size:7px;letter-spacing:.1em;color:var(--ink-3);text-transform:uppercase;margin-top:5px;">Staggered adoption, 2011Q1&ndash;2024Q4 &middot; Medicaid State Drug Utilization Data</div>
+      </div>
+
+      <!-- Mortality -->
+      <div class="card">
+        <div class="section-head"><span class="num">03</span> <h3>The mortality signal &mdash; honest about uncertainty.</h3></div>
+        <p>Direct estimates of the overdose-death effect are <strong>not stable</strong> across estimators. LP-DiD finds a meaningful drop; DID2S and TWFE are imprecise and opposite-signed.</p>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:6px;">
+          <div style="background:var(--paper);padding:7px 8px;border-left:2px solid var(--teal);">
+            <div style="font-family:'Source Serif 4';font-weight:600;font-size:16px;color:var(--teal);line-height:1;">&minus;1.4</div>
+            <div style="font-size:7.5px;color:var(--ink-2);margin-top:2px;">LP-DiD<br><em>per 100k &middot; p=0.016</em></div>
+          </div>
+          <div style="background:var(--paper);padding:7px 8px;border-left:2px solid var(--ink-3);">
+            <div style="font-family:'Source Serif 4';font-weight:600;font-size:16px;color:var(--ink-2);line-height:1;">~0</div>
+            <div style="font-size:7.5px;color:var(--ink-2);margin-top:2px;">DID2S<br><em>imprecise</em></div>
+          </div>
+          <div style="background:var(--paper);padding:7px 8px;border-left:2px solid var(--ink-3);">
+            <div style="font-family:'Source Serif 4';font-weight:600;font-size:16px;color:var(--ink-2);line-height:1;">~0</div>
+            <div style="font-size:7.5px;color:var(--ink-2);margin-top:2px;">TWFE<br><em>imprecise</em></div>
+          </div>
+        </div>
+        <p style="margin-top:6px;">The cleaner read combines the robust prescribing effect with literature-based mortality parameters: roughly <strong>40 deaths averted per state-year</strong>, or about <strong>480 per year</strong> across the twelve treated states.</p>
+      </div>
+
+    </div>
+
+    <div class="col right">
+
+      <div class="card">
+        <div class="section-head"><span class="num">A</span> <h3>Why this matters now.</h3></div>
+        <ul class="tick">
+          <li>Fentanyl drives <strong>~75%</strong> of opioid deaths; the protective effect of medication has never been more consequential.</li>
+          <li>The 2023 elimination of the X-waiver added <strong>11,600 new prescribers</strong> &mdash; but patient counts barely moved (Chua et al. 2024). Supply-side reform alone isn&rsquo;t enough.</li>
+          <li>The HEAL Act and several state bills would <strong>prohibit PA</strong> for OUD medications. They need clean causal evidence.</li>
+        </ul>
+      </div>
+
+      <div class="card warm">
+        <div class="section-head"><span class="num">B</span> <h3>What we did.</h3></div>
+        <p>Linked <strong>Medicaid State Drug Utilization Data</strong> and <strong>CDC WONDER</strong> overdose mortality, 2011&ndash;2024, to a hand-built panel of state PA-removal events.</p>
+        <p>Used the <strong>Gardner (2022) DID2S</strong> and <strong>Dube et&nbsp;al. (2023) LP-DiD</strong> estimators &mdash; both unbiased under the heterogeneous treatment effects that break standard TWFE in staggered designs.</p>
+      </div>
+
+      <div class="card">
+        <div class="section-head"><span class="num">C</span> <h3>What&rsquo;s new.</h3></div>
+        <ul class="tick teal">
+          <li>Doubles the treated-state count of the prior best study (12 vs. 6).</li>
+          <li>First multi-state design to follow PA removal all the way through to <strong>downstream overdose mortality</strong>.</li>
+          <li>Diagnoses why per-enrollee prescribing rates look noisier than total counts: <strong>denominator instability</strong> in Medicaid enrollment.</li>
+        </ul>
+      </div>
+
+      <div class="card dark">
+        <div class="section-head"><span class="num">&rarr;</span> <h3>So what?</h3></div>
+        <p>Prior authorization on a drug that halves mortality is the most expensive paperwork in American health policy. Removing it is <strong>cheap, fast, budget-neutral</strong>. The default should be <strong>no PA for buprenorphine</strong>.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="who">
+      <b>Jonathan Palisoc</b> &middot; Ph.D. Candidate, Health Services Organization &amp; Policy, University of Michigan<br>
+      <span class="ital">Working paper, 2026. Cite as: Palisoc, J. (2026). Removing the Gate.</span>
+    </div>
+    <div class="qr">
+      <div class="qbox" data-qr="https://papers.jonpalisoc.com/buprenorphine-pa.pdf"></div>
+      <div class="qlbl">Read the paper<br><b>papers.jonpalisoc.com</b></div>
+    </div>
+  </div>
+
+</div>
+<script src="onepager.js"></script>
+</body>
+</html>

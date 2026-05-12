@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Watching the Workers &mdash; 1-Pager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="onepager.css">
+</head>
+<body>
+<div class="page" data-screen-label="01 EVV Rollout 1-Pager">
+
+  <div class="eyebrow">
+    <div>Policy One-Pager <span class="dot"></span> Medicaid <span class="dot"></span> Home Care</div>
+    <div><span class="badge">Working Paper &middot; 2026</span></div>
+  </div>
+
+  <div class="masthead">
+    <div>
+      <h1>Watching the workers: electronic visit verification and the Medicaid home-care market.</h1>
+      <div class="sub">Congress required GPS tracking of every Medicaid home-care visit and projected $290 million in fraud savings. Five years in, the aggregate claims data shows&hellip; almost nothing.</div>
+    </div>
+    <div class="author-chip">
+      <b>Jonathan Palisoc</b>
+      Ph.D. Candidate, Health Services Org. &amp; Policy
+      <div class="role">University of Michigan</div>
+    </div>
+  </div>
+
+  <div class="tldr">
+    <div>
+      <div class="label">The bottom line</div>
+      <p>The 21st Century Cures Act mandated <b>Electronic Visit Verification (EVV)</b> for all Medicaid personal-care services by 2020 and home health by 2023 &mdash; with CBO projecting <b>$290&nbsp;million</b> in federal savings. The first causal evaluation finds <b>no statistically significant spending effect</b> on any margin: price, utilization, providers, or beneficiaries. The CBO savings <em>cannot be ruled out</em> &mdash; aggregate data is roughly <b>200&times; too noisy</b> to detect them.</p>
+    </div>
+    <div class="stat">
+      <div class="num">&minus;$1.8M<small>&nbsp;/&nbsp;Q</small></div>
+      <div class="cap">Quarterly PCS claims spending effect per state. <em>SE&nbsp;$17.76M &middot; p&nbsp;=&nbsp;0.92 &middot; precisely null</em></div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="col left">
+
+      <!-- The null across margins -->
+      <div class="card">
+        <div class="section-head"><span class="num">01</span> <h3>Where the savings were supposed to be.</h3></div>
+        <p style="margin-bottom:5px;">EVV was supposed to deter fraud by recording six elements of every home visit. Decomposing the claims effect into the channels through which deterrence would show up:</p>
+
+        <table class="t" style="margin-top:3px;">
+          <thead><tr><th style="text-align:left;">Channel</th><th>Estimate</th><th><em>p</em></th></tr></thead>
+          <tbody>
+            <tr><td>$ per claim (price)</td><td>&minus;$36.60</td><td>0.146</td></tr>
+            <tr><td>Claims per provider</td><td>+2,333</td><td>0.355</td></tr>
+            <tr><td>Provider count (exit?)</td><td>&minus;1.2</td><td>0.786</td></tr>
+            <tr><td>Beneficiary count</td><td>+2,459</td><td>0.723</td></tr>
+            <tr><td><strong>Total PCS spending</strong></td><td><strong>&minus;$1.8M</strong></td><td><strong>0.920</strong></td></tr>
+          </tbody>
+        </table>
+
+        <div style="font-family:'IBM Plex Mono';font-size:7px;letter-spacing:.1em;color:var(--ink-3);text-transform:uppercase;margin-top:5px;">T-MSIS claims, 2018&ndash;2024, state-quarter panel &middot; TWFE / DID2S</div>
+      </div>
+
+      <!-- The power problem -->
+      <div class="card warm">
+        <div class="section-head"><span class="num">02</span> <h3>A null result with a power asterisk.</h3></div>
+        <p>The CBO projected total computable savings of about <strong>$0.25M per state-quarter</strong>. The minimum effect this design can detect is <strong>$49.76M per state-quarter</strong>.</p>
+
+        <div style="display:flex;gap:6px;margin-top:7px;align-items:flex-end;">
+          <div style="flex:1;text-align:center;">
+            <div style="height:14px;background:var(--teal);width:1px;margin:0 auto;"></div>
+            <div style="font-family:'Source Serif 4';font-weight:600;font-size:11px;color:var(--teal);margin-top:4px;">$0.25M</div>
+            <div style="font-size:7.5px;color:var(--ink-2);">CBO projection</div>
+          </div>
+          <div style="flex:6;text-align:center;">
+            <div style="height:80px;background:var(--ochre);"></div>
+            <div style="font-family:'Source Serif 4';font-weight:600;font-size:13px;color:var(--ochre);margin-top:4px;">$49.76M</div>
+            <div style="font-size:7.5px;color:var(--ink-2);">minimum detectable effect</div>
+          </div>
+        </div>
+        <p style="margin-top:7px;">The aggregate-data signal-to-noise ratio is <strong>200&times; too poor</strong> to confirm or refute the CBO. <em>Absence of evidence is not evidence of absence.</em></p>
+      </div>
+
+      <!-- What we can rule out -->
+      <div class="card">
+        <div class="section-head"><span class="num">03</span> <h3>What we can rule out &mdash; and can&rsquo;t.</h3></div>
+        <ul class="tick">
+          <li><strong>Can rule out:</strong> large provider exits. Provider counts barely moved (&minus;1.2, p=0.79).</li>
+          <li><strong>Can rule out:</strong> a transition shock to beneficiary access.</li>
+          <li><strong>Can&rsquo;t rule out:</strong> small per-claim fraud-deterrence savings of the CBO&rsquo;s magnitude.</li>
+          <li><strong>Can&rsquo;t rule out:</strong> savings offset by improved documentation of legitimate visits previously under-billed.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="col right">
+
+      <div class="card">
+        <div class="section-head"><span class="num">A</span> <h3>Why this matters now.</h3></div>
+        <ul class="tick">
+          <li>Medicaid home and community-based services exceed <strong>$100 billion / year</strong>; personal-care attendant fraud has run <strong>34&ndash;43%</strong> of all Medicaid Fraud Control Unit convictions.</li>
+          <li>EVV is now operational in <strong>all 51 jurisdictions</strong> for PCS and <strong>44</strong> for home health.</li>
+          <li>Several federal proposals would expand the EVV framework to other Medicaid services. Knowing whether the existing rollout paid off &mdash; or just imposed compliance cost &mdash; is the threshold question.</li>
+        </ul>
+      </div>
+
+      <div class="card warm">
+        <div class="section-head"><span class="num">B</span> <h3>What we did.</h3></div>
+        <p>Hand-coded EVV implementation timing for all 51 jurisdictions; merged with <strong>T-MSIS Medicaid claims</strong> (quarterly, provider-procedure level) and CMS Financial Management Reports as secondary validation.</p>
+        <p style="margin-top:5px;">Three estimators &mdash; <strong>TWFE, Gardner DID2S, triple-difference</strong> exploiting the three-year gap between PCS and HHCS deadlines &mdash; all converge on the same precisely-null result.</p>
+      </div>
+
+      <div class="card">
+        <div class="section-head"><span class="num">C</span> <h3>Honest caveats.</h3></div>
+        <ul class="tick ochre">
+          <li>T-MSIS has known <strong>managed-care quality issues</strong> &mdash; my estimates are an intent-to-treat lower bound.</li>
+          <li>HHCS pre-trends are <strong>rejected (p=0.0002)</strong> &mdash; the home-health result is fragile; PCS is clean.</li>
+          <li>Formal compliance lags operational implementation; treatment effects could be <strong>diluted</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="card dark">
+        <div class="section-head"><span class="num">&rarr;</span> <h3>So what?</h3></div>
+        <p>EVV produced <strong>no detectable aggregate savings</strong> &mdash; but the design isn&rsquo;t powered to find the CBO&rsquo;s number. The right policy update isn&rsquo;t &ldquo;EVV failed.&rdquo; It&rsquo;s: <strong>any future compliance mandate should ship with a measurement plan that can actually see the savings it promises</strong>.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="who">
+      <b>Jonathan Palisoc</b> &middot; Ph.D. Candidate, Health Services Organization &amp; Policy, University of Michigan<br>
+      <span class="ital">Working paper, 2026. Cite as: Palisoc, J. (2026). Watching the Workers.</span>
+    </div>
+    <div class="qr">
+      <div class="qbox" data-qr="https://papers.jonpalisoc.com/evv-rollout.pdf"></div>
+      <div class="qlbl">Read the paper<br><b>papers.jonpalisoc.com</b></div>
+    </div>
+  </div>
+
+</div>
+<script src="onepager.js"></script>
+</body>
+</html>

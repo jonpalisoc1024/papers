@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>The Distributional Bite &mdash; 1-Pager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="onepager.css">
+</head>
+<body>
+<div class="page" data-screen-label="01 NH Staffing 1-Pager">
+
+  <div class="eyebrow">
+    <div>Policy One-Pager <span class="dot"></span> LTSS <span class="dot"></span> Nursing Homes</div>
+    <div><span class="badge">Working Paper &middot; 2026</span></div>
+  </div>
+
+  <div class="masthead">
+    <div>
+      <h1>Where the staffing floor <em>bites</em>: Medicaid share, rurality, and the heterogeneous response.</h1>
+      <div class="sub">The federal nursing-home staffing rule was vacated and repealed; the debate is back in the states. The average treatment effect hides the answer &mdash; the <em>bite</em> shows it.</div>
+    </div>
+    <div class="author-chip">
+      <b>Jonathan Palisoc</b>
+      Ph.D. Candidate, Health Services Org. &amp; Policy
+      <div class="role">University of Michigan</div>
+    </div>
+  </div>
+
+  <div class="tldr">
+    <div>
+      <div class="label">The bottom line</div>
+      <p>Across 13 states that adopted numerical staffing floors 2018&ndash;2024, the binary average effect is contaminated by a post-COVID secular trend (a t&minus;8q placebo returns the same number). The <b>identifying heterogeneity</b> all runs in the policy-expected direction: a monotone dose-response across bite quintiles, steepest among the most Medicaid-dependent and rural facilities. The bite&nbsp;&times;&nbsp;Medicaid-share&nbsp;&times;&nbsp;post triple interaction is <b>+0.153&nbsp;HPRD (p&nbsp;&lt;&nbsp;0.001)</b>.</p>
+    </div>
+    <div class="stat">
+      <div class="num">+0.153</div>
+      <div class="cap">Triple interaction (bite &times; Medicaid share &times; post) on Total HPRD. <em>SE 0.034 &middot; t&nbsp;=&nbsp;4.6</em></div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="col left">
+
+      <div class="card">
+        <div class="section-head"><span class="num">01</span> <h3>The dose-response gradient.</h3></div>
+        <p style="margin-bottom:4px;">A facility&rsquo;s &ldquo;bite&rdquo; is the gap between the new floor and its pre-policy mean HPRD. The post-adoption response grows monotonically across bite quintiles:</p>
+
+        <div class="bar-row"><div class="lbl"><b>Q1 (slack)</b></div><div class="bar"><div class="fill" style="width:100%"></div></div><div class="v" style="color:var(--brick);">&minus;0.34</div></div>
+        <div class="bar-row"><div class="lbl"><b>Q2</b></div><div class="bar"><div class="fill" style="width:74%"></div></div><div class="v" style="color:var(--brick);">&minus;0.25</div></div>
+        <div class="bar-row"><div class="lbl"><b>Q3</b></div><div class="bar"><div class="fill ochre" style="width:44%"></div></div><div class="v" style="color:var(--ochre);">&minus;0.15</div></div>
+        <div class="bar-row"><div class="lbl"><b>Q4</b></div><div class="bar"><div class="fill ochre" style="width:18%"></div></div><div class="v" style="color:var(--ochre);">&minus;0.06</div></div>
+        <div class="bar-row"><div class="lbl"><b>Q5 (binding)</b></div><div class="bar"><div class="fill teal" style="width:8%"></div></div><div class="v" style="color:var(--teal);">+0.03</div></div>
+
+        <div style="font-family:'IBM Plex Mono';font-size:7px;letter-spacing:.1em;color:var(--ink-3);text-transform:uppercase;margin-top:5px;">CSA dose-response &middot; total HPRD &middot; 13 adopting states</div>
+      </div>
+
+      <div class="card warm">
+        <div class="section-head"><span class="num">02</span> <h3>Where it really bites.</h3></div>
+        <p>The cross-quintile spread <strong>widens with Medicaid share</strong> &mdash; exactly where the financing margin is tightest:</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:6px;text-align:center;">
+          <div style="background:var(--paper);padding:7px 6px;border-left:2px solid var(--ink-3);"><div style="font-family:'Source Serif 4';font-weight:600;font-size:18px;color:var(--ink-2);line-height:1;">0.32</div><div style="font-size:7.5px;color:var(--ink-2);margin-top:3px;line-height:1.3;">Low-Medicaid<br>Q1&rarr;Q5 spread</div></div>
+          <div style="background:var(--paper);padding:7px 6px;border-left:2px solid var(--ochre);"><div style="font-family:'Source Serif 4';font-weight:600;font-size:18px;color:var(--ochre);line-height:1;">0.40</div><div style="font-size:7.5px;color:var(--ink-2);margin-top:3px;line-height:1.3;">Mid-Medicaid</div></div>
+          <div style="background:var(--paper);padding:7px 6px;border-left:2px solid var(--brick);"><div style="font-family:'Source Serif 4';font-weight:600;font-size:18px;color:var(--brick);line-height:1;">0.43</div><div style="font-size:7.5px;color:var(--ink-2);margin-top:3px;line-height:1.3;">High-Medicaid</div></div>
+        </div>
+        <p style="margin-top:6px;">Rural facilities show a steeper gradient than urban (0.51 vs. 0.34). The largest single positive-effect cell anywhere in the heterogeneity grid is <strong>rural &times; Bite-Q5 (+0.076&nbsp;HPRD)</strong>.</p>
+      </div>
+
+      <div class="card">
+        <div class="section-head"><span class="num">03</span> <h3>The honest binary average.</h3></div>
+        <p>The pooled CSA ATT is <strong>&minus;0.143</strong> &mdash; wrong-signed for a binding mandate. But a <strong>t&minus;8q placebo</strong> returns <strong>&minus;0.13</strong>: the binary average is contaminated by a post-COVID treated-state staffing erosion, not the mandate.</p>
+        <p style="margin-top:5px;">Bacon decomposition rules out forbidden comparisons (81% of weight is clean treated-vs-never-treated). Heterogeneity specifications survive because they use within-state-quarter variation a state-level placebo cannot replicate.</p>
+      </div>
+
+    </div>
+
+    <div class="col right">
+
+      <div class="card">
+        <div class="section-head"><span class="num">A</span> <h3>Why it matters now.</h3></div>
+        <ul class="tick">
+          <li>The 2024 CMS federal rule was vacated and repealed in late 2025; <strong>25 states</strong> still operate their own floors.</li>
+          <li>Any future federal rule will land on the same heterogeneous facility distribution.</li>
+          <li><strong>Medicaid-heavy</strong> and <strong>rural</strong> facilities are the binding cases; one-size-fits-all standards leave them with no margin.</li>
+        </ul>
+      </div>
+
+      <div class="card warm">
+        <div class="section-head"><span class="num">B</span> <h3>What we did.</h3></div>
+        <p>Built a <strong>510,189-row facility-quarter panel</strong> from the CMS Payroll-Based Journal 2017Q1&ndash;2025Q4 (16,401 facilities).</p>
+        <p>Constructed each facility&rsquo;s pre-policy bite; merged LTCFocus Medicaid-day shares and Care Compare rurality. Estimated Callaway&ndash;Sant&rsquo;Anna ATT, dose-response across bite quintiles, and a TWFE triple interaction.</p>
+      </div>
+
+      <div class="card">
+        <div class="section-head"><span class="num">C</span> <h3>Why believe it.</h3></div>
+        <ul class="tick teal">
+          <li>Within-state-quarter identification can&rsquo;t be replicated by the state-level placebo that breaks the binary average.</li>
+          <li>Resident-mix robustness: 7-control adjustment moves the binary point estimate from &minus;0.145 to &minus;0.139.</li>
+          <li><strong>Rambachan&ndash;Roth HonestDiD</strong> bounds confirm direction.</li>
+        </ul>
+      </div>
+
+      <div class="card dark">
+        <div class="section-head"><span class="num">&rarr;</span> <h3>So what?</h3></div>
+        <p>Staffing floors work <strong>where they bind and where they matter</strong>. Any future federal mandate should pair the standard with <strong>technical assistance and rate-cell adjustments</strong> for Medicaid-heavy and rural facilities.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="who">
+      <b>Jonathan Palisoc</b> &middot; Ph.D. Candidate, Health Services Organization &amp; Policy, University of Michigan<br>
+      <span class="ital">Working paper, 2026. Cite as: Palisoc, J. (2026). The Distributional Bite.</span>
+    </div>
+    <div class="qr">
+      <div class="qbox" data-qr="https://papers.jonpalisoc.com/nh-staffing-floor-bite.pdf"></div>
+      <div class="qlbl">Read the paper<br><b>papers.jonpalisoc.com</b></div>
+    </div>
+  </div>
+
+</div>
+<script src="onepager.js"></script>
+</body>
+</html>

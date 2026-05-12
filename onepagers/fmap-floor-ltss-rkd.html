@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>A Contaminated Kink &mdash; 1-Pager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="onepager.css">
+</head>
+<body>
+<div class="page" data-screen-label="01 FMAP RKD 1-Pager">
+
+  <div class="eyebrow">
+    <div>Methods One-Pager <span class="dot"></span> Medicaid <span class="dot"></span> FMAP Kink</div>
+    <div><span class="badge">Working Paper &middot; 2026</span></div>
+  </div>
+
+  <div class="masthead">
+    <div>
+      <h1>A contaminated kink: when the <em>ACA expansion</em> breaks a workhorse Medicaid design.</h1>
+      <div class="sub">A regression kink at Medicaid&rsquo;s 50% federal-match floor has become a go-to identification strategy. Once you drop ACA-expansion state-years from the panel, the sign flips. That&rsquo;s a warning, not a fix.</div>
+    </div>
+    <div class="author-chip">
+      <b>Jonathan Palisoc</b>
+      Ph.D. Candidate, Health Services Org. &amp; Policy
+      <div class="role">University of Michigan</div>
+    </div>
+  </div>
+
+  <div class="tldr">
+    <div>
+      <div class="label">The bottom line</div>
+      <p>The FMAP regression-kink design recovers a positive aggregate Medicaid spending response on the pooled FY 2008&ndash;2023 panel &mdash; <b>+1.49</b> &mdash; but dropping ACA-expansion state-years <b>flips the sign to &minus;2.53</b>. An extended-window check (FY 2002&ndash;2023, +306 state-years) confirms the flip is structural, not sample-size driven. The non-expansion subsample is also <b>observably unbalanced</b>: 35% Southern vs. 13% nationally.</p>
+    </div>
+    <div class="stat">
+      <div class="num">&minus;2.53</div>
+      <div class="cap">Non-expansion FMAP-kink response on log(total Medicaid / pop). <em>95% CI &minus;4.26 to &minus;0.79</em></div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="col left">
+
+      <div class="card">
+        <div class="section-head"><span class="num">01</span> <h3>One design, two federal-match margins.</h3></div>
+        <p>The §1905(b) FMAP formula has a sharp <strong>50% floor</strong>. A growing RKD literature (Kumar 2020; Leung 2022; Giertz &amp; Kumar 2024) uses that kink to identify how state Medicaid spending responds to federal generosity.</p>
+        <p style="margin-top:5px;">But on post-2014 panels, the formula isn&rsquo;t the only federal-match margin: ACA expansion attaches a flat <strong>90%</strong> match to a newly eligible population in expansion states only &mdash; and expansion choice <em>correlates with</em> the RKD running variable.</p>
+        <div style="margin-top:7px;display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+          <div style="background:var(--paper-2);padding:7px 9px;border-left:2px solid var(--brick);"><div style="font-family:'Source Serif 4';font-weight:600;font-size:18px;color:var(--brick);line-height:1;">50%</div><div style="font-size:8px;color:var(--ink-2);margin-top:3px;">Statutory FMAP floor &middot; the kink the RKD exploits</div></div>
+          <div style="background:var(--paper-2);padding:7px 9px;border-left:2px solid var(--ochre);"><div style="font-family:'Source Serif 4';font-weight:600;font-size:18px;color:var(--ochre);line-height:1;">90%</div><div style="font-size:8px;color:var(--ink-2);margin-top:3px;">ACA expansion match &middot; the contamination</div></div>
+        </div>
+      </div>
+
+      <div class="card warm">
+        <div class="section-head"><span class="num">02</span> <h3>The headline sign flip.</h3></div>
+        <p>Three outcomes, two specifications: drop the ACA-expansion state-years and the policy story changes.</p>
+        <table class="t" style="margin-top:5px;">
+          <thead><tr><th style="text-align:left;">Outcome</th><th>Pooled</th><th>Drop ACA</th></tr></thead>
+          <tbody>
+            <tr><td>log(Total Medicaid / pop)</td><td>+1.49</td><td><strong style="color:var(--brick);">&minus;2.53</strong></td></tr>
+            <tr><td>HCBS share of LTSS</td><td>&minus;0.19</td><td><strong style="color:var(--brick);">&minus;1.19</strong></td></tr>
+            <tr><td>Institutional LTSS</td><td>+1.83</td><td>+2.34</td></tr>
+          </tbody>
+        </table>
+        <div style="font-family:'IBM Plex Mono';font-size:7px;letter-spacing:.1em;color:var(--ink-3);text-transform:uppercase;margin-top:5px;">Local-quadratic RKD &middot; MSE-optimal bandwidth &middot; FY 2008&ndash;2023</div>
+      </div>
+
+      <div class="card">
+        <div class="section-head"><span class="num">03</span> <h3>Three estimands, one warning.</h3></div>
+        <div class="stat-row">
+          <div class="stat-cell"><div class="v">+1.49</div><div class="l">Pooled aggregate response &mdash; the standard estimate.</div><div class="p">CI &minus;1.06 to 4.03</div></div>
+          <div class="stat-cell teal"><div class="v">&minus;2.53</div><div class="l">Drop ACA state-years &mdash; sign flips.</div><div class="p">CI &minus;4.26 to &minus;0.79</div></div>
+          <div class="stat-cell ochre"><div class="v">&minus;2.60</div><div class="l">Extended window FY02&ndash;23 confirms structural flip.</div><div class="p">+306 state-yrs</div></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col right">
+
+      <div class="card">
+        <div class="section-head"><span class="num">A</span> <h3>Why it matters.</h3></div>
+        <ul class="tick">
+          <li>The FMAP-kink RKD is now a <strong>workhorse</strong> for federal-Medicaid finance research.</li>
+          <li>Any paper using it on post-2014 data risks <strong>pooling two distinct match variations</strong>.</li>
+          <li>The non-expansion subsample is <strong>not a clean counterfactual</strong> &mdash; it&rsquo;s a selected sample.</li>
+        </ul>
+      </div>
+
+      <div class="card warm">
+        <div class="section-head"><span class="num">B</span> <h3>What we did.</h3></div>
+        <p>Built a public-data panel of 816 state-years (FY 2008&ndash;2023) from MACPAC, HHS Federal Register, BEA SAINC1, and CMS/Mathematica LTSS reports. Replicated a sharp local-quadratic RKD with state-clustered SEs.</p>
+        <p>Pre-specified drops for <strong>ARRA, ACA expansion, and FFCRA §6008</strong> enhanced-match episodes, then added an observable balance check on expansion vs. non-expansion state-years inside the bandwidth.</p>
+      </div>
+
+      <div class="card">
+        <div class="section-head"><span class="num">C</span> <h3>Why believe it.</h3></div>
+        <ul class="tick teal">
+          <li>Empirical FMAP slope at the kink is <strong>0.88&ndash;1.04</strong>, recovering the mechanical <strong>0.9487</strong> from §1905(b) &mdash; the pipeline is correct.</li>
+          <li>Extended-window check on a 45% larger panel confirms the flip.</li>
+          <li><strong>Caveat:</strong> the non-expansion estimate is itself selected &mdash; not a preferred estimand.</li>
+        </ul>
+      </div>
+
+      <div class="card dark">
+        <div class="section-head"><span class="num">&rarr;</span> <h3>So what?</h3></div>
+        <p>Future FMAP-kink analyses should pre-specify <strong>&ldquo;drop all ACA-expansion state-years&rdquo;</strong> as a primary robustness check, not a footnote. The headline aggregate response in this literature is not robust to that drop.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="who">
+      <b>Jonathan Palisoc</b> &middot; Ph.D. Candidate, Health Services Organization &amp; Policy, University of Michigan<br>
+      <span class="ital">Working paper, 2026. Cite as: Palisoc, J. (2026). A Contaminated Kink.</span>
+    </div>
+    <div class="qr">
+      <div class="qbox" data-qr="https://papers.jonpalisoc.com/fmap-floor-ltss-rkd.pdf"></div>
+      <div class="qlbl">Read the paper<br><b>papers.jonpalisoc.com</b></div>
+    </div>
+  </div>
+
+</div>
+<script src="onepager.js"></script>
+</body>
+</html>

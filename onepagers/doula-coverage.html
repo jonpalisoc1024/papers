@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Cradle Equity &mdash; 1-Pager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="onepager.css">
+</head>
+<body>
+<div class="page" data-screen-label="01 Doula Coverage 1-Pager">
+
+  <div class="eyebrow">
+    <div>Policy One-Pager <span class="dot"></span> Medicaid <span class="dot"></span> Maternal Health</div>
+    <div><span class="badge">Working Paper &middot; 2026</span></div>
+  </div>
+
+  <div class="masthead">
+    <div>
+      <h1>Cradle equity: state Medicaid doula coverage and the populations it was built for.</h1>
+      <div class="sub">Twenty-eight states now cover doula services under Medicaid. Pooled outcomes look flat. Look inside the average, and the policy is doing exactly what it was designed to do.</div>
+    </div>
+    <div class="author-chip">
+      <b>Jonathan Palisoc</b>
+      Ph.D. Candidate, Health Services Org. &amp; Policy
+      <div class="role">University of Michigan</div>
+    </div>
+  </div>
+
+  <div class="tldr">
+    <div>
+      <div class="label">The bottom line</div>
+      <p>Pooled state-year effects are statistically indistinguishable from zero. <b>That isn&rsquo;t the story.</b> Stratified by race, Medicaid doula coverage produces meaningful reductions in <b>NH&nbsp;Black</b> preterm birth (&minus;2.86&nbsp;pp) and low birthweight (&minus;3.37&nbsp;pp), and large gains in <b>NH&nbsp;AIAN</b> prenatal-care access. This is a <em>distributional</em> intervention &mdash; it moves outcomes for the populations facing the largest baseline disparities, which is what equity policy is supposed to do.</p>
+    </div>
+    <div class="stat">
+      <div class="num">&minus;2.86<small>&nbsp;pp</small></div>
+      <div class="cap">Preterm birth, NH Black mothers, after state doula coverage. <em>95% CI &minus;5.64 to &minus;0.08 &middot; CSA DiD</em></div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="col left">
+
+      <!-- The race-stratified effects -->
+      <div class="card">
+        <div class="section-head"><span class="num">01</span> <h3>Where the policy actually moves the needle.</h3></div>
+        <p style="margin-bottom:5px;">Race-stratified ATTs from Callaway&ndash;Sant&rsquo;Anna staggered DiD, post-coverage:</p>
+
+        <table class="t" style="margin-top:3px;">
+          <thead><tr><th style="text-align:left;">Outcome</th><th>Group</th><th>ATT</th></tr></thead>
+          <tbody>
+            <tr><td>Preterm birth</td><td>NH Black</td><td><strong>&minus;2.86&nbsp;pp</strong></td></tr>
+            <tr><td>Low birthweight</td><td>NH Black</td><td><strong>&minus;3.37&nbsp;pp</strong></td></tr>
+            <tr><td>Late preterm</td><td>NH Black</td><td><strong>&minus;2.24&nbsp;pp</strong></td></tr>
+            <tr><td>Late or no prenatal care</td><td>NH AIAN</td><td><strong>&minus;9.51&nbsp;pp</strong></td></tr>
+            <tr><td>Inadequate prenatal visits</td><td>NH AIAN</td><td><strong>&minus;10.51&nbsp;pp</strong></td></tr>
+            <tr><td><em>Pooled (all groups)</em></td><td><em>&mdash;</em></td><td><em>~0</em></td></tr>
+          </tbody>
+        </table>
+
+        <div style="font-family:'IBM Plex Mono';font-size:7px;letter-spacing:.1em;color:var(--ink-3);text-transform:uppercase;margin-top:5px;">Race-stratified pre-specified on equity grounds &middot; CDC WONDER 2019&ndash;2024</div>
+      </div>
+
+      <!-- The disparity context -->
+      <div class="card warm">
+        <div class="section-head"><span class="num">02</span> <h3>Why race-stratified analysis is the right unit.</h3></div>
+        <p>The baseline disparities the policy was built to address:</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:6px;">
+          <div style="background:var(--paper);padding:7px 8px;border-left:2px solid var(--brick);">
+            <div style="font-family:'Source Serif 4';font-weight:600;font-size:18px;color:var(--brick);line-height:1;">3&times;</div>
+            <div style="font-size:8px;color:var(--ink-2);margin-top:3px;line-height:1.3;">NH Black maternal mortality vs. NH White</div>
+          </div>
+          <div style="background:var(--paper);padding:7px 8px;border-left:2px solid var(--brick);">
+            <div style="font-family:'Source Serif 4';font-weight:600;font-size:18px;color:var(--brick);line-height:1;">+50&ndash;70<small style="font-size:11px;">%</small></div>
+            <div style="font-size:8px;color:var(--ink-2);margin-top:3px;line-height:1.3;">NH Black preterm &amp; low-birthweight rates</div>
+          </div>
+        </div>
+        <p style="margin-top:6px;">If continuous labor support buffers patients against the sharpest edges of the clinical system &mdash; advocacy, missed appointments, communication &mdash; the people with the worst baseline experience have the most to gain. The data agree.</p>
+      </div>
+
+      <!-- The methodology -->
+      <div class="card">
+        <div class="section-head"><span class="num">03</span> <h3>Robustness, told honestly.</h3></div>
+        <ul class="tick teal">
+          <li>Callaway&ndash;Sant&rsquo;Anna preferred over TWFE: Goodman&ndash;Bacon shows <strong>28%</strong> of TWFE weight comes from problematic already-treated comparisons.</li>
+          <li>Survives drop-OR/MN, drop-2024, postpartum-overlap drops, HonestDiD smoothness bounds.</li>
+          <li><strong>None</strong> of the 10 nominally significant cells survive Bonferroni across 50 tests &mdash; defended on <strong>pre-specification grounds</strong>, not data-mining.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="col right">
+
+      <div class="card">
+        <div class="section-head"><span class="num">A</span> <h3>Why this matters.</h3></div>
+        <ul class="tick">
+          <li>The US has a maternal mortality rate <strong>2&ndash;3&times;</strong> peer high-income countries; disparities have been <strong>stable for decades</strong>.</li>
+          <li>MACPAC&rsquo;s 2023 report explicitly called for <strong>population-level evaluation</strong> of doula benefits. This paper is the first.</li>
+          <li>States deciding whether to adopt, expand, or sustain doula benefits have been relying on <strong>RCTs of in-person labor support</strong>, not state-program evidence.</li>
+        </ul>
+      </div>
+
+      <div class="card warm">
+        <div class="section-head"><span class="num">B</span> <h3>What&rsquo;s new here.</h3></div>
+        <ul class="tick ochre">
+          <li>First quasi-experimental, population-level evaluation of state Medicaid doula coverage.</li>
+          <li>First analysis to show the <strong>distributional</strong> pattern: equity-targeted policies will look null in pooled means.</li>
+          <li>Extends the outcome set into <strong>prenatal-care access</strong>, where the NH AIAN gains are largest.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="section-head"><span class="num">C</span> <h3>Limits.</h3></div>
+        <ul class="tick">
+          <li>State-aggregate, not individual-level outcomes.</li>
+          <li>Six-year analytic window; some adopting cohorts have very short post-periods.</li>
+          <li>Some states co-timed <strong>postpartum extension</strong>; effects unstack only partly.</li>
+        </ul>
+      </div>
+
+      <div class="card dark">
+        <div class="section-head"><span class="num">&rarr;</span> <h3>So what?</h3></div>
+        <p>Doula coverage is doing what advocates promised &mdash; <strong>narrowing the disparities at the heart of the maternal-health crisis</strong>. Evaluations that look only at pooled means will conclude the policy doesn&rsquo;t work. They&rsquo;ll be wrong.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="foot">
+    <div class="who">
+      <b>Jonathan Palisoc</b> &middot; Ph.D. Candidate, Health Services Organization &amp; Policy, University of Michigan<br>
+      <span class="ital">Working paper, 2026. Cite as: Palisoc, J. (2026). Cradle Equity.</span>
+    </div>
+    <div class="qr">
+      <div class="qbox" data-qr="https://papers.jonpalisoc.com/doula-coverage.pdf"></div>
+      <div class="qlbl">Read the paper<br><b>papers.jonpalisoc.com</b></div>
+    </div>
+  </div>
+
+</div>
+<script src="onepager.js"></script>
+</body>
+</html>
