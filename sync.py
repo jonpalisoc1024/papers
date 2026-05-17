@@ -42,6 +42,7 @@ PAPERS = [
     ("adult-dental",                           HEALTH, "future", "adult-dental",                          "hsr"),
     ("buprenorphine-pa",                       HEALTH, "papers", "buprenorphine-pa",                      "health-affairs"),
     ("ca-medi-cal-2024-expansion",             HEALTH, "future", "ca-medi-cal-26-49-expansion",           None),
+    ("ca-medi-cal-26-49-expansion",            HEALTH, "future", "ca-medi-cal-26-49-expansion",           None),
     ("continuous-eligibility-children",        HEALTH, "future", "continuous-eligibility-children",       None),
     ("doula-coverage",                         HEALTH, "papers", "doula-coverage",                        "health-affairs"),
     ("evv-rollout",                            HEALTH, "papers", "evv-rollout",                           "health-affairs"),
