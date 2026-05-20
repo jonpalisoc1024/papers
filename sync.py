@@ -50,6 +50,7 @@ PAPERS = [
     ("fmap-floor-ltss-rkd",                    HEALTH, "papers", "fmap-floor-ltss-rkd",                   "medical_care"),
     ("fqhc-nap-bartik-iv",                     HEALTH, "papers", "fqhc-nap-bartik-iv",                    None),
     ("medicaid-drug-pools",                    HEALTH, "papers", "medicaid-drug-pools",                   "health-affairs"),
+    ("medicaid-chip-formulary-variation",      HEALTH, "future", "medicaid-chip-formulary-variation",     "health-affairs-scholar"),
     ("noncitizen-coverage",                    HEALTH, "papers", "noncitizen-coverage",                   "health-affairs"),
     ("nh-staffing-floor-bite",                 HEALTH, "future", "nh-staffing-floor-bite",                None),
     ("oregon-healthier-oregon",                HEALTH, "future", "oregon-healthier-oregon-sdid",          None),

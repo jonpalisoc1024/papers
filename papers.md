@@ -41,6 +41,10 @@ The 21st Century Cures Act required state Medicaid programs to install Electroni
 
 California's Ages 26–49 Adult Full-Scope Medi-Cal Expansion, effective January 1, 2024, extended full-benefit Medi-Cal to income-eligible residents regardless of immigration status. Building a 2018–2024 IPUMS American Community Survey state-year panel for low-income noncitizens ages 26–49 and estimating ridge-augmented synthetic control (`pysyncon`) alongside synthetic difference-in-differences (`synthdid`) against a 43-state donor pool that excludes states with comparable adult immigrant-coverage policies, I report two co-primary FPL bands: 1–200% (broad) and 1–138% (Medicaid-relevant). Across both bands and both estimators, California uninsurance is lower in 2024 than the synthetic counterfactual by 7.0 to 8.6 percentage points; the Medicaid coverage gain attenuates at the narrower 1–138% band (+1.8 pp `pysyncon`; +7.6 pp `synthdid`) but does not flip sign. Placebo-in-space and HonestDiD diagnostics are weaker than ideal (Fisher-exact rank *p* = 0.977 in all eight cells), so the headline is read as a directional public-data screen rather than a precision estimate.
 
+### [Plan-Level Formulary Variation In Medicaid Managed Care](medicaid-chip-formulary-variation.pdf)
+
+I assemble current public Medicaid managed care formularies and preferred-drug-list sources and link them to the top 100 Medicaid drugs by 2024 State Drug Utilization Data gross spending. The source universe contains 103 plan/source rows across 19 states, including 74 plan rows in states without a binding common preferred drug list. In that no-common-PDL sample, 56.0 percent of plan-drug cells are not listed or unmatched, 21.8 percent are preferred with utilization management, 7.8 percent are nonpreferred, 7.6 percent are preferred without utilization management, and 6.8 percent have mixed within-plan matches. Same-pharmacy-administrator pairs are more aligned than other pairs but still not identical. I frame plan choice in Medicaid managed care as a pharmacy-access and consumer-transparency issue, not only a provider-network choice.
+
 ---
 
 ## Working Papers
