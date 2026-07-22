@@ -1,0 +1,8 @@
+.DS_Store
+__pycache__/
+sync.py
+UNPUBLISHED.flag
+post-commit-hook
+cofa-medicaid-restoration-report.md
+cofa-medicaid-restoration-report.pdf
+*.bundle
