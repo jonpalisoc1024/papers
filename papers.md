@@ -1,5 +1,9 @@
-## Working Papers
+## Dissertation Papers
 
-My working papers are temporarily offline while I complete a round of revisions. If you would like a copy of any paper in the meantime, please email me at jpalisoc@umich.edu.
+- [Fear as a Barrier to Coverage: The Chilling Effect of the Public Charge Rule on Children's Medicaid Enrollment](https://papers.jonpalisoc.com/public-charge-chilling.pdf) (Job Market Paper)
+- [Suspension vs. Termination: Medicaid Continuity Policies During Incarceration and Effects on Post-Release Coverage, Employment, and Mortality](https://papers.jonpalisoc.com/suspension-termination.pdf)
+- [Strength in Numbers: Interstate Purchasing Pools and Medicaid Supplemental Rebate Capture](https://papers.jonpalisoc.com/medicaid-drug-pools.pdf)
+
+Other working papers are available on request: jpalisoc@umich.edu.
 
 My CV is available [here](https://papers.jonpalisoc.com/cv.pdf).
